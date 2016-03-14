@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <com.sirius.madness.ui.views.CustomFontTextView
+            android:id="@+id/question_number"
+            style="@style/montserratSemiBold"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_blue"
+            android:text="1"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:gravity="center" />
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/openSansSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Question"
+            android:textColor="@color/black"
+            android:text="Question"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="6.5"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="start"
+        android:padding="25dp"
+        android:background="@drawable/shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/login_button_welcome_01_shadow"
+        android:gravity="center_horizontal">
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratSemiBold"
+            android:id="@+id/submitFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="SUBMIT SURVEY"
+            android:gravity="center_vertical|right"
+            android:textSize="22dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_vertical" />
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/customIconFont"
+            android:id="@+id/rightArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="23dp"/>
+    </LinearLayout>
+</LinearLayout>

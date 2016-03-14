@@ -1,0 +1,29 @@
+  [
+  {
+  "id": 1,
+  "title": "Welcome Reception",
+  "date": "FEB 28th",
+  "time": "7-9 pm Dinner; 7-10 pm Drinks",
+  "image": "event6000",
+  "desc": "",
+  "location": "Independence Ballroom",
+  "attire": "Casual, jeans maybe be worn"},
+  {
+  "id": 2,
+  "title": "Dinner And Awards Ceremony",
+  "date" : "FEB 29th",
+  "time" : "6:30 - 9:30pm",
+  "image": "event6001",
+  "desc": "Join us Monday evening to recognize the past year's top achievers and Hall of Fame inductees.",
+  "location": "Independence Ballroom",
+  "attire": "Business Casual"},
+  {
+  "id": 3,
+  "title": "Solution Center",
+  "date" : "MAR 1st",
+  "time" : "6:30 - 10:30pm",
+  "image": "event6002",
+  "desc": "Enjoy food and fun, and stop by our partner tables to learn how they support our solutions.\n\nThere will be plenty of opportunities to win one of our many raffle items.",
+  "location": "Independence Ballroom",
+  "attire": "Casual, jeans maybe be worn"}
+  ]

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#00A800"
+        android:scaleType="centerCrop"
+        android:id="@+id/eventBackground" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FEB 28th"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7:00 - 0:00pm"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratSemiBold"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Reception"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:textAllCaps="true" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/category">
+        <TextView
+            android:id="@+id/eventCategory"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textSize="30sp"
+            android:textColor="#fff" />
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:measureWithLargestChild="false"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="62dp"
+        android:padding="1dp"
+        android:gravity="center"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:id="@+id/scheduleItemBackground"
+            android:dividerPadding="10dp"
+            android:background="@color/theme_tertiary_light_orange"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:id="@+id/scheduleItemDarkBackground"
+                android:layout_gravity="center_vertical|left"
+                android:background="@color/theme_tertiary_orange"
+                android:padding="2dp"
+                android:gravity="center">
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/customIconFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/scheduleItemIcon"
+                    android:layout_weight="3"
+                    android:text="\uf110"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="5dp" />
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratSemiBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Example"
+                    android:id="@+id/scheduleItemIconText"
+                    android:layout_weight="7"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:padding="2px"
+                    android:gravity="center_vertical|center_horizontal" />
+            </LinearLayout>
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/montserratSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventTitle"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Clash of titans"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="6.5"
+                android:layout_gravity="center_vertical" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:id="@+id/scheduleRightSideContainer">
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/customIconFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/eventRightArrow"
+                    android:layout_marginTop="5dp"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical|right"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="@string/custom_font_icon_right_arrow" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/theme_primary_red"
+                    android:id="@+id/scheduleHiddenTab"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/customIconFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/removeScheduleIcon"
+                        android:layout_weight="4"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:text="@string/custom_font_icon_circle_x"
+                        android:gravity="center" />
+
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/customIconFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/removeScheduleItem"
+                        android:layout_weight="6"
+                        android:textColor="@android:color/white"
+                        android:text="@string/schedule_remove_item"
+                        android:textSize="10sp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.sirius.madness.ui.activities.KeynoteSpeakersActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:id="@+id/scrollContainer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.8"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gene_kim"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7.2"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Gene Kim"
+                        android:textSize="20dp"
+                        android:textColor="@color/theme_primary_base"
+                        android:textAllCaps="true"
+                        style="@style/montserratRegular"/>
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Tripwire Founder &amp; CTO Co-author of the Pheonix Project"
+                        android:textSize="17dp"
+                        android:textColor="@color/theme_primary_base"
+                        android:textAllCaps="true"
+                        style="@style/montserratLight"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Kim is an award-winning CTO, resercher and author of numerous technology books, including The Visible Ops Handbook and The Security Visible Ops Handbook. Tripwire is best knows for commercializing the open source software Kim co-wrote. He is a dynamic speaker with a passion of helping companies build super tribes to find and fix the IT bottlenecks that prevent them from achieving their overarching goals."
+                android:textSize="16dp"
+                android:lineSpacingExtra="3dp"
+                style="@style/montserratLight"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.8"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/jim_simpson"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7.2"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Jim Simpson"
+                        android:textSize="20dp"
+                        android:textColor="@color/theme_primary_base"
+                        android:textAllCaps="true"
+                        style="@style/montserratRegular"/>
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="PRESIDENT OF STRATEGIC INITIATIVES, SIRIUS COMPUTER SOLUTIONS"
+                        android:textSize="17dp"
+                        android:textColor="@color/theme_primary_base"
+                        android:textAllCaps="true"
+                        style="@style/montserratLight"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Jim Simpson was named president of Strategic Initiatives at Sirius Computer Solutions when the acquisition of MSI Systems Integrators was completed in November, 2010. Prior to the acquisition, Mr. Simpson was the president and CEO of MSI, and a member of MSI's Board of Directors.\n\nIn Mr. Simpson's current role, he is tasked with the executive oversight of Sirius' Consulting, Software, and Mainframe groups, and leads emerging technology initiatives including cloud, mobility and healthcare. He is also heavily involved in the Sales organization, and represents the Sirius executive team at numerous client meetings throughout the year.\n\nAs MSI's president and CEO, Mr. Simpson excelled in managing the growth and development of an organization that he had helped shape into one of the nation's top IT business integrators. In 2006, his outstanding leadership skills were recognized with the executive of the year award presented at the VAR Business 500 Conference for leading one of North America's successful technology integrators. In 2007, Mr. Simpson was named as one of the Top 25 Most Innovative Executives by CRN magazine.\n\nMr. Simpson joined MSI in December 1999 and demonstrated leadership in the areas of defining and building upon MSI's core competencies to enable information technology for business and leveraging MSI's strength in partner and customer relationships. Prior to joining MSI, Mr. Simpson held a number of key leadership positions during his 19-year career with IBM in sales and sales management.\n\nMr. Simpson received his bachelor's degree from Creighton University in Omaha, Nebraska, and is an active member in the community. He is a member of the World Presidents' Organization, and of the Creighton University College of Arts and Science Advisory Board. He is also currently chairman of the Board of Directors of the Children's Hospital &amp; Medical Center in Omaha."
+                android:textSize="16dp"
+                android:lineSpacingExtra="3dp"
+                style="@style/montserratLight"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.8"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/jeremiah_cook"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7.2"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="JEREMIAH COOK"
+                        android:textSize="20dp"
+                        android:textColor="@color/theme_primary_base"
+                        android:textAllCaps="true"
+                        style="@style/montserratRegular"/>
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="VICE PRESIDENT OF STRATEGIC INITIATIVES, SIRIUS COMPUTER SOLUTIONS"
+                        android:textSize="17dp"
+                        android:textColor="@color/theme_primary_base"
+                        android:textAllCaps="true"
+                        style="@style/montserratLight"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="As vice president of Strategic Initiatives, Jeremiah Cook leverages his experience and relationships and his understanding of the Sirius organization to help clients continue to improve their IT organizations and their businesses.\n\nMr. Cook started Cook Consulting Services in 2004 to focus on providing IT professional services to small business clients in Greensboro, NC and surrounding areas. Between 2004 and 2008, he built a team of six engineers providing professional services in the areas of server virtualization, desktop virtualization and storage.\n\nIn 2008, Mr. Cook merged his business with Weiss IT Consulting, started by Dan Weiss, to form Varrow, Inc. with a focus on providing storage, virtualization and disaster recovery solutions to larger clients throughout the Carolinas and southern Virginia. He served as the CTO of Varrow from 2008 until 2013, and CEO from 2013 until the company's acquisition by Sirius Computer Solutions in 2015.\n\nBetween its founding in 2008 and its acquisition in 2015, Varrow became a top regional solutions provider, won many growth and engineering excellence awards, and grew from eight to 165 employees."
+                android:textSize="16dp"
+                android:lineSpacingExtra="3dp"
+                style="@style/montserratLight"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+</ScrollView>
+
+<include layout="@layout/menu_layout_with_bar" />
+
+<include layout="@layout/menu_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right|bottom"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    />
+
+
+</FrameLayout>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sirius.madness.ui.views.TouchImageView
+        android:id="@+id/boothMapImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="center"
+        android:adjustViewBounds="true"
+        android:layout_margin="4dp"
+        android:src="@drawable/mobtest" />
+
+    <include layout="@layout/menu_layout_with_bar" />
+
+    <include layout="@layout/menu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"/>
+
+</FrameLayout>

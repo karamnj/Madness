@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.sirius.madness.ui.activities.BreakoutActivity"
+tools:ignore="MergeRootFrame">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container">
+
+    <ListView
+        android:id="@+id/discoverList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/discoverErrorMessage"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/discover_error_message"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+</LinearLayout>
+
+<include layout="@layout/menu_layout_with_filter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|bottom" />
+
+<include layout="@layout/menu_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right|bottom"
+    android:layout_marginBottom="12dp"
+    android:layout_marginRight="16dp"
+    />
+    <FrameLayout
+        android:id="@+id/progressSpinner"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_margin="5dip"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MergeRootFrame"
+    android:background="@color/theme_neutral_light_grey"
+    tools:context="com.sirius.madness.ui.activities.SurveyActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/surveyList"
+            android:orientation="vertical"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"/>
+    </ScrollView>
+    <!--<ListView
+        android:id="@+id/surveyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/theme_neutral_light_grey"
+        android:dividerHeight="5dp"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"
+        />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surveyErrorMessage"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/survey_error_message"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+</FrameLayout>

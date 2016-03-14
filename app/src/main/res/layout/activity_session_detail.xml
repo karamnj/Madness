@@ -1,0 +1,221 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sirius.madness.ui.activities.SessionDetailActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sirius.madness.ui.activities.SessionDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="170dp">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/theme_secondary_green"
+                android:id="@+id/session_header_layout"
+                android:weightSum="1">
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Clash Of Titans"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:id="@+id/sessionDetailTitle"
+                    android:layout_gravity="left"
+                    android:minLines="1"
+                    android:layout_weight="0.98"
+                    style="@style/montserratRegular"/>
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right|top"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/shareButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="@string/custom_font_icon_share"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:paddingLeft="4dp"
+                        android:gravity="center" />
+
+                    <!--<Button
+                        android:id="@+id/addToCalendarButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="@string/custom_font_icon_star_empty"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/theme_secondary_green" />-->
+
+                <!--<android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvSpeakerList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp" />-->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/montserratSemiBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DATE: "
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/background_floating_material_dark"/>
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/openSansRegular"
+                            android:id="@+id/sessionDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Date:"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/montserratSemiBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TIME: "
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/background_floating_material_dark"/>
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/openSansRegular"
+                            android:id="@+id/sessionTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Time:"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/locationWrapper">
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/montserratSemiBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LOCATION: "
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/background_floating_material_dark"/>
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/openSansRegular"
+                            android:id="@+id/sessionLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Location:"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/speakersWrapper">
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/montserratSemiBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SPEAKERS: "
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/background_floating_material_dark"/>
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/openSansRegular"
+                            android:id="@+id/speakers_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Speakers:"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        <!--</RelativeLayout>-->
+
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/openSansRegular"
+            android:id="@+id/sessionDescription"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:text="@string/dummy_description"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/provideFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_rectangle"
+        android:padding="10dp"
+        android:text="@string/provide_feedback"
+        android:textColor="@color/white"
+        android:textSize="14dp"/>
+
+    <!--<include-->
+        <!--layout="@layout/menu_back_layout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right|bottom"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="16dp" />-->
+
+</LinearLayout>
+</ScrollView>

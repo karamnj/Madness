@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="180dip"
+    android:orientation="vertical"
+    android:id="@+id/sessionHolder">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dip"
+        android:background="#00A800"
+        android:scaleType="centerCrop"
+        android:id="@+id/sessionBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:id="@+id/shareAction"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/custom_font_icon_share"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:background="?android:attr/selectableItemBackground"
+            android:focusable="false"
+            android:paddingLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:gravity="right|top" />
+
+        <!--<Button
+            android:id="@+id/addTocalendar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/custom_font_icon_star_empty"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="?android:attr/selectableItemBackground"
+            android:focusable="false" />-->
+    </LinearLayout>
+
+    <com.sirius.madness.ui.views.CustomFontTextView
+        android:id="@+id/sessionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLASH OF TITANS"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="30dp"
+        style="@style/montserratSemiBold"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:background="#ffffff"
+        android:id="@+id/dateLayout"
+        android:alpha="0.8">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:id="@+id/sessionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oct 6th"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                style="@style/montserratLight"/>
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:id="@+id/sessionTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:45 - 10:25"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="8dp"
+                style="@style/montserratLight"/>
+        </LinearLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/category">
+        <TextView
+            android:id="@+id/sessionCategory"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textSize="32sp"
+            android:textColor="#fff"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+    </FrameLayout>
+</FrameLayout>

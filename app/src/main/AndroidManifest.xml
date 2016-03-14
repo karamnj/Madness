@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sirius.madness"
+    android:versionCode="3" >
+
+    <!-- Custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.sirius.madness.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.sirius.madness.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".util.BlueListApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC6C3uBb1O5IbRXQ6Y4EQEXUwdKcZamlmg" />
+
+        <activity
+            android:name=".ui.activities.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.DiscoverActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sirius.madness.IBMPushNotification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.MyScheduleActivity"
+            android:label="@string/title_activity_my_schedule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.SolutionsGalleryActivity"
+            android:label="@string/title_activity_solutions_gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.GalleryActivity"
+            android:label="@string/title_activity_gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.SessionDetailActivity"
+            android:label="@string/title_activity_session_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.BoothMapActivity"
+            android:label="@string/title_activity_booth_map"
+            android:parentActivityName=".ui.activities.SessionDetailActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support API level 4+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sirius.madness.ui.activities.SessionDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.SpeakerFeedActivity"
+            android:label="@string/title_activity_speaker_feed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.SpeakerInfoActivity"
+            android:label="@string/title_activity_speaker_info"
+            android:parentActivityName=".ui.activities.SpeakerFeedActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support API level 4+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sirius.madness.ui.activities.SpeakerFeedActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.about.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.about.MoreAboutActivity"
+            android:label="@string/title_activity_more_about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.about.ContactUsActivity"
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.about.DevTeamActivity"
+            android:label="@string/title_activity_dev_team"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.about.SoftwareUsedActivity"
+            android:label="@string/title_activity_software_used"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.PromotionsActivity"
+            android:label="@string/title_activity_promotions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.PartnersWebViewActivity"
+            android:label="@string/title_activity_partners"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.SponsorsActivity"
+            android:label="@string/title_activity_sponsors"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.SponsorsWebViewActivity"
+            android:label="@string/title_activity_sponsors_webview"
+            android:screenOrientation="portrait"
+            android:theme="@style/WebviewActionBar" >
+        </activity>
+        <activity
+            android:name=".ui.activities.QRScannerActivity"
+            android:label="@string/title_activity_scanners"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.ShareContactActivity"
+            android:label="@string/title_activity_share_contact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.RegisterParticipantActivity"
+            android:label="@string/title_activity_register_participants"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--
+          BroadcastReceiver that will receive intents from GCM
+          services and handle them to the custom IntentService.
+
+          The com.google.android.c2dm.permission.SEND permission is necessary
+          so only GCM services can send data messages for the app.
+        -->
+        <receiver
+            android:name="com.ibm.mobile.services.push.IBMPushBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.sirius.madness" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.sirius.madness" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="com.sirius.madness" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.ibm.mobile.services.push.IBMPushIntentService" />
+
+        <!-- Content Provider -->
+        <provider
+            android:name=".provider.IgniteProvider"
+            android:authorities="com.sirius.madness.provider"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:syncable="true" />
+
+        <activity
+            android:name=".ui.activities.PartnersActivity"
+            android:label="@string/title_activity_partners"
+            android:parentActivityName=".ui.activities.about.AboutActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sirius.madness.ui.activities.about.AboutActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".util.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <activity
+            android:name=".ui.activities.LoginSelectorActivity"
+            android:label="@string/title_activity_login_selector"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.LoginWebViewActivity"
+            android:label="@string/title_activity_login_webview"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+        <activity
+            android:name=".ui.activities.LoginTutorial01Activity"
+            android:label="@string/app_name">
+
+        </activity>
+        -->
+        <activity
+            android:name=".ui.activities.LoginTutorial02Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+        <activity
+            android:name=".ui.activities.LoginTutorial03Activity"
+            android:label="@string/title_activity_login_tutorial">
+
+        </activity>
+        <activity
+            android:name=".ui.activities.LoginTutorial04Activity"
+            android:label="@string/title_activity_login_tutorial">
+
+        </activity>
+        -->
+        <activity
+            android:name=".ui.activities.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="0a564a9e5f8d168cc96fc69ab2890ef073fddc00" />
+
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.SurveyActivity"
+            android:label="@string/title_activity_survey"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.LoginSiriusActivity"
+            android:label="@string/title_activity_login_sirius"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".ui.activities.BreakoutActivity"
+            android:label="@string/title_activity_breakout"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.about.MobileDetailActivity"
+            android:label="@string/title_activity_mobile_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.EventsActivity"
+            android:label="@string/title_activity_events"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.EventDetailActivity"
+            android:label="@string/title_activity_event_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activities.AgendaActivity"
+            android:label="@string/title_activity_agenda" >
+        </activity>
+        <activity
+            android:name=".ui.activities.KeynoteSpeakersActivity"
+            android:label="@string/title_activity_keynote_speakers" >
+        </activity>
+    </application>
+
+</manifest>

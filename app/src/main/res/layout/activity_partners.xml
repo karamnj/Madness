@@ -1,0 +1,39 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sirius.madness.ui.activities.about.PartnersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/partnersList"
+            android:dividerHeight="5dp"></ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/partnersErrorMessage"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="@string/partner_error_message"
+            android:textAlignment="center"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/menu_layout_with_bar" />
+
+    <include layout="@layout/menu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"/>
+
+</FrameLayout>
+

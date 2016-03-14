@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MADNESS 2016</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_bar_discover">Breakout Sessions</string>
+    <string name="menu_bar_agenda">Agenda at a Glance</string>
+    <string name="menu_bar_keynotespeakers">Keynote Speakers</string>
+    <string name="menu_bar_breakout">Breakout Sessions List</string>
+    <string name="menu_bar_my_schedule">My Breakouts</string>
+    <string name="menu_bar_solutions_gallery">Solutions Gallery</string>
+    <string name="menu_bar_gallery">Gallery</string>
+    <string name="menu_bar_partners">Partners</string>
+    <string name="menu_bar_sponsors">Sponsors</string>
+    <string name="menu_bar_speakers">Speakers</string>
+    <string name="menu_bar_about">Info Tables</string>
+    <string name="menu_bar_maps">Map</string>
+    <string name="menu_bar_share_contact">Share Contact</string>
+    <string name="menu_bar_regisrer_participant">Check-In</string>
+    <string name="menu_bar_welcome">Welcome from Joe</string>
+    <string name="filter_bar_monday">MONDAY</string>
+    <string name="filter_bar_tuesday">TUESDAY</string>
+    <string name="filter_bar_wednesday">WEDNESDAY</string>
+    <string name="filter_bar_thursday">THURSDAY</string>
+    <string name="filter_bar_friday">FRIDAY</string>
+    <string name="filter_bar_saturday">SATURDAY</string>
+    <string name="filter_bar_sunday">SUNDAY</string>
+    <string name="filter_bar_all">ALL</string>
+    <string name="filter_bar_a">Breakout A - 10:25 - 11:10</string>
+    <string name="filter_bar_b">Breakout B - 11:25 - 12:10</string>
+    <string name="filter_bar_c">Breakout C - 2:00 - 2:50</string>
+    <string name="filter_bar_d">Breakout D - 3:00 - 3:45</string>
+    <string name="filter_bar_e">Breakout E - 3:55 - 4:40</string>
+    <string name="title_activity_my_schedule">YOUR BREAKOUTS</string>
+    <string name="title_activity_breakout">BREAKOUT SESSIONS</string>
+    <string name="title_activity_solutions_gallery">SOLUTIONS GALLERY</string>
+    <string name="title_activity_gallery">GALLERY</string>
+    <string name="title_activity_session_detail">SESSION</string>
+    <string name="title_activity_speaker_feed">SPEAKER LIST</string>
+    <string name="title_activity_speaker_info">SPEAKER</string>
+    <string name="title_activity_booth_map">MAP</string>
+    <string name="title_activity_login_tutorial">TUTORIAL</string>
+    <string name="dummy_description">The bare idea of reaching Leatherhead would not let me rest, and in the strangest way. The eet of refugees was scattering to the last sentence was the opening of the night. He stopped astride of the Crystal Palace glittered like two silver rods. concerning them.</string>
+    <string name="title_activity_about">INFO TABLES</string>
+    <string name="title_activity_more_about">MORE ABOUT US</string>
+    <string name="more_about_us">More About Us</string>
+    <string name="title_activity_contact_us">CONTACT US</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="us_global">US/Global</string>
+    <string name="ContactUsHeader1">Let\'s Get Connected</string>
+    <string name="ContactUsHeader2">Corporate Contacts</string>
+    <string name="title_activity_dev_team">DEVELOPMENT TEAM</string>
+    <string name="development_team">Development Team</string>
+    <string name="get_connected">Get Connected:</string>
+    <string name="title_activity_software_used">APPLICATION SOFTWARE USED</string>
+    <string name="software_used">Application Software Used</string>
+    <string name="send_mail">Send mail...</string>
+    <string name="login">Login </string>
+    <string name="provide_feedback">Provide Feedback</string>
+    <string name="submit_feedback">Submit</string>
+    <string name="scan_id">Scan Participant ID </string>
+    <string name="scan_contact">Scan Contact </string>
+    <string name="scan_count">Count</string>
+    <string name="scan_id_dialogue">Scan the QR Code to Login as Participant </string>
+    <string name="scan_contact_dialogue">Scan the QR Code to add them to your Contacts </string>
+    <string name="scan_participants">Scan Participants </string>
+    <string name="scan_participants_dialogue">Select Session to Add Participants</string>
+    <string name="no_email_clients">There are no email clients installed.</string>
+    <string name="title_activity_partners">OUR PARTNERS</string>
+    <string name="title_activity_scanners">Scanner</string>
+    <string name="title_activity_sponsors_webview">Sponsors</string>
+    <string name="title_activity_share_contact">SHARE CONTACT</string>
+    <string name="title_activity_register_participants">CHECK-IN</string>
+    <string name="title_activity_sponsors">OUR SPONSORS</string>
+    <string name="title_activity_login_credentials">Login</string>
+    <string name="title_activity_login_selector">Login</string>
+    <string name="title_activity_login_webview">Login</string>
+    <string name="schedule_remove_item">Remove From Schedule</string>
+    <string name="custom_font_icon_check_mark">\uf100</string>
+    <string name="custom_font_icon_down_arrow">\uf101</string>
+    <string name="custom_font_icon_right_arrow">\uf102</string>
+    <string name="custom_font_icon_up_arrow">\uf103</string>
+    <string name="custom_font_icon_x">\uf104</string>
+    <string name="custom_font_icon_thumbs_up">\uf105</string>
+    <string name="custom_font_icon_linked_in">\uf106</string>
+    <string name="custom_font_icon_location">\uf107</string>
+    <string name="custom_font_icon_login">\uf108</string>
+    <string name="custom_font_icon_email">\uf109</string>
+    <string name="custom_font_icon_menu">\uf10a</string>
+    <string name="custom_font_icon_phone">\uf10b</string>
+    <string name="custom_font_icon_circle_x">\uf10c</string>
+    <string name="custom_font_icon_star_empty">\uf10d</string>
+    <string name="custom_font_icon_star_filled">\uf112</string>
+    <string name="custom_font_icon_share">\uf10e</string>
+    <string name="custom_font_icon_shopping_car">\uf10f</string>
+    <string name="custom_font_icon_clock">\uf110</string>
+    <string name="custom_font_icon_twitter">\uf111</string>
+    <string name="title_activity_maps">MAP</string>
+    <string name="about_google_maps">Google Maps SDK adds maps based on Google maps data to the application. The SDK automatically handles access to the Google Maps servers, map display, and response to user gestures such as clicks and drags.</string>
+    <string name="about_linked_in">LinkedIn is a business-oriented social networking service. It is mainly used for professional networking.</string>
+    <string name="about_twitter">Twitter is an online social networking service that enables users to send and read short 140-character messages called tweets</string>
+    <string name="about_bluemix">IBM Bluemix is an open-standards, cloud-based platform for building, managing and running apps of all types. This includes apps for web and mobile, and those that tap into big data</string>
+    <string name="login_welcome">Login to create a schedule, connect with speakers, and more</string>
+    <string name="login_with_twitter">Login with Twitter</string>
+    <string name="login_as_guest">SKIP FOR NOW</string>
+    <string name="login_with_linkedin">Login with LinkedIn</string>
+    <string name="login_credential_text">LOG IN NOW</string>
+    <string name="login_tutorial_welcome">WELCOME TO MADNESS 2016</string>
+    <string name="login_tutorial_next">NEXT</string>
+    <string name="login_tutorial_finish">FINISH</string>
+    <string name="login_tutorial_01_message">Ignite will help you keep track of busy conferences and events. Since this is the first time we\'ve met, there are a couple questions.\nLet\'s answer them!</string>
+    <string name="login_tutorial_02_message">We would like to access your location to provide information on conferences near you</string>
+    <string name="login_tutorial_03_message">There\'s a good possibility that you\'re going to want to do lots of things that require some way of confirming your identity.\n\nWhen you click "Next", we\'ll let you choose if you\'d like to login.</string>
+    <string name="login_tutorial_04_message">That\'s it!\n\nYour preferences have been saved. Enjoy Ignite, and all the events within!</string>
+    <string name="login_selection_or_text">OR</string>
+    <string name="login_selection_explain_text">We need you to login in order to RSVP to the event. Please use one of the options below:</string>
+    <string name="continue_text">Continue</string>
+    <string name="rsvp">RSVP to Join Us!</string>
+    <string name="title_activity_promotions">Promotions</string>
+    <string name="discover_error_message">We\'re sorry, it appears that external data on sessions has failed to load. Please check your internet connection and try again!</string>
+    <string name="partner_error_message">We\'re sorry, it appears that external data on our partners has failed to load. Please check your internet connection and try again!</string>
+    <string name="sponsor_error_message">We\'re sorry, it appears that external data on our sponsors has failed to load. Please check your internet connection and try again!</string>
+    <string name="session_error_message">We\'re sorry, it appears that external data on our sessions has failed to load. Please check your internet connection and try again!</string>
+    <string name="survey_error_message">We\'re sorry, it appears that external data on our survey has failed to load. Please check your internet connection and try again!</string>
+    <string name="speaker_error_message">We\'re sorry, it appears that external data on our speakers has failed to load. Please check your internet connection and try again!</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="title_activity_login">Presenter Login</string>
+    <string name="title_activity_survey">SURVEY</string>
+    <string name="title_activity_login_sirius">LoginSiriusActivity</string>
+    <string name="spinner_default">Select One</string>
+
+    <string-array name="role_type">
+        <item>Select One</item>
+        <item>Client Executive</item>
+        <item>Sales Specialist</item>
+        <item>Inside Sales</item>
+        <item>DSGM</item>
+        <item>Sales VP</item>
+        <item>Executive (Non-Sales)</item>
+        <item>Techincal (Pre/Post)</item>
+        <item>Speaker</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_mobile_detail">MobileDetailActivity</string>
+    <string name="title_activity_events">Events</string>
+    <string name="menu_bar_events">Events</string>
+    <string name="events_error_message">Events data could not be loaded</string>
+    <string name="title_activity_event_detail">EventDetailActivity</string>
+    <string name="title_activity_welcome">WELCOME FROM JOE</string>
+    <string name="title_activity_agenda">AGENDA AT A GLANCE</string>
+    <string name="title_activity_keynote_speakers">KEYNOTE SPEAKERS</string>
+</resources>

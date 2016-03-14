@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sirius.madness.ui.activities.DiscoverActivity"
+    tools:ignore="MergeRootFrame">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/joe_portrait"
+            android:adjustViewBounds="true"/>-->
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Are you ready?"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Welcome to the sixth annual Sirius Madness. We have been hard at work to bring together an exiting day for you. This year's agenda is the best yet, with two keynotes, over 55 breakout sessions, our better than ever hang space, and hundreds of the best minds in the IT industry."
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="We're glad you are able to join us today, and hope you have an amazing experience. We would also like to thank our partners for sponsoring and supporting this Madness year after year. Thank you!"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="This year we've taken the sponsor booths to the next level. While Sirius Madness veterans know that the Madness booth area is unlike any other normal tradeshow, newcomers will be experiencing the NCAA Basketball themed booth for the first time. Throughout the day, visit each booth and get your bracket card completed with each team's sticker, and at the end of the show, turn in your card for a chance to win some awesome prizes. Let's not forget that each booth with also be showing the NCAA Tournament all day long; so be sure to make your rounds."
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="The Madness is never really over; join us in the Promenade immediately following the show for a St. Patrick's Day Happy Hour. Remember to drink responsibility."
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="We want to thank you again for spending your day with us and we want to remind you to please give us your feedback on the event; after all, Sirius Madness is for you, and we want to continue to improve year after year. You can share your thoughts with us via the short survey on the back of your booth bracket card."
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="We hope to see you again next March for Sirius Madness 2017!"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <!--<com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Sincerely,"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/joe_signature"
+            android:adjustViewBounds="true"/>
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Joe Mertens\nPresident and CEO"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/menu_layout_with_bar" />
+    <include
+        layout="@layout/menu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp" />
+
+</FrameLayout>

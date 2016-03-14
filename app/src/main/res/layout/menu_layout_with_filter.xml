@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="43dp"
+android:layout_gravity="bottom">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white"/>
+    <FrameLayout
+        android:id="@+id/filterBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/black"
+            android:alpha="0.8">
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/montserratLight"
+                android:id="@+id/filterLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Filter Sessions:"
+                android:textSize="17dp"
+                android:textColor="@color/white"/>
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/montserratRegular"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/filterVal"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="All"
+                android:textSize="17dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </FrameLayout>
+    <!--<Button
+        android:id="@+id/bMenuBar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_rectangle"
+        android:text="menu"
+        android:textColor="@color/white"
+        android:padding="5dp" />-->
+</LinearLayout>

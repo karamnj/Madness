@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:id="@+id/container">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="false">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:id="@+id/DevPhoto"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/mobtest"
+            android:scaleType="fitXY"
+            android:cropToPadding="false"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_secondary_base"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp">
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:id="@+id/DevName"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/montserratRegular"/>
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/DevCompany"
+                android:textColor="@color/white"
+                style="@style/montserratLight"
+                android:paddingTop="10dp"
+                android:textSize="15dp" />
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/DevTitle"
+                android:textColor="@color/white"
+                style="@style/montserratLight"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/theme_primary_highlight"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/GetConnected"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <com.sirius.madness.ui.views.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_connected"
+            android:id="@+id/GetConnectedText"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            style="@style/montserratLight"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DevEmail"
+            android:src="@drawable/email_icon"
+            android:baselineAlignBottom="false"
+            android:maxHeight="30dp"
+            android:clickable="true"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/GetConnectedText"
+            android:layout_toEndOf="@+id/GetConnectedText"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DevTwitter"
+            android:src="@drawable/twitter"
+            android:baselineAlignBottom="false"
+            android:maxHeight="35dp"
+            android:clickable="true"
+            android:adjustViewBounds="true"
+            android:layout_alignBottom="@+id/GetConnectedText"
+            android:layout_toRightOf="@+id/GetConnectedText"
+            android:layout_toEndOf="@+id/GetConnectedText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DevLinkedIn"
+            android:src="@drawable/linked_in_icon"
+            android:baselineAlignBottom="false"
+            android:maxHeight="30dp"
+            android:clickable="true"
+            android:adjustViewBounds="true"
+            android:layout_alignBottom="@+id/DevTwitter"
+            android:layout_toRightOf="@+id/DevTwitter"
+            android:layout_toEndOf="@+id/DevTwitter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp" />
+    </LinearLayout>
+
+</LinearLayout>

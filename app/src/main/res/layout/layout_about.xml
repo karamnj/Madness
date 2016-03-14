@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp"
+    android:background="@drawable/about_border"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="15dp">
+
+    <com.sirius.madness.ui.views.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:id="@+id/AboutItem"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        style="@style/montserratRegular"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="right|top"
+        android:src="@drawable/chevron_right_black"
+        android:adjustViewBounds="true" />
+
+</FrameLayout>

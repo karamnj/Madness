@@ -1,0 +1,26 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_select_role">Select Role</string>
+    <string name="pref_title_password">Password: </string>
+
+    <string name="pref_title_admin">AAAA</string>
+    <string name="pref_title_speaker">BBBB</string>
+
+    <string-array name="pref_role_list_titles">
+        <item>Participant</item>
+        <item>Speaker</item>
+        <item>Admin</item>
+    </string-array>
+    <string-array name="pref_role_list_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

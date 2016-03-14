@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.sirius.madness.ui.activities.about.ContactUsActivity$ContactUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                android:id="@+id/contactFirst">
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/us_global"
+                    android:id="@+id/contact_header1"
+                    style="@style/montserratRegular"/>
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="#000000" />
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:textSize="16dp"
+                    android:id="@+id/contact_disc"
+                    android:layout_marginTop="10dp"
+                    style="@style/montserratLight"
+                    android:textColor="@color/black"/>
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:id="@+id/contact_email"
+                    style="@style/montserratRegular"
+                    android:textColor="@color/theme_primary_red"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                android:id="@+id/contactSecond">
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/ContactUsHeader1"
+                    android:id="@+id/contact_header2"
+                    style="@style/montserratRegular"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text=""
+                        android:id="@+id/TwitterLink"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/twitter_black50"/>
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text=""
+                        android:id="@+id/LinkedInLink"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/linkedin_black50"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                android:id="@+id/contactThird">
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/ContactUsHeader2"
+                    android:id="@+id/contact_header3"
+                    style="@style/montserratRegular"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/contact_addressTitle"
+                    style="@style/montserratRegular"/>
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:id="@+id/contact_shortTitle"
+                    style="@style/montserratLight"
+                    android:textColor="@color/black"/>
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:id="@+id/contact_addressLine1"
+                    style="@style/montserratLight"
+                    android:textColor="@color/black"/>
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:id="@+id/contact_addressLine2"
+                    style="@style/montserratLight"
+                    android:textColor="@color/black"/>
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:id="@+id/contact_phone"
+                    style="@style/montserratLight"
+                    android:textColor="@color/theme_primary_red"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="20px" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

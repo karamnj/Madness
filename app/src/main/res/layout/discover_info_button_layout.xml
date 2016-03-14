@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="110dp"
+        android:layout_gravity="left|top"
+        android:background="@color/theme_tertiary_light_orange">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/userlogout"
+            android:layout_gravity="right|top"
+            android:text="@string/custom_font_icon_login"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="WELCOME,"
+                android:id="@+id/profileText"
+                android:textColor="#fff"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:textSize="14sp"
+                style="@style/montserratSemiBold"/>
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNKNOWN"
+                android:id="@+id/userName"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="bottom"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_marginBottom="8dp"
+                android:gravity="bottom"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                style="@style/montserratLight"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--<FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="110dp"
+        android:layout_gravity="right|top"
+        android:layout_marginLeft="8dp"
+        android:background="@color/theme_tertiary_orange">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/userLocationIcon"
+            android:layout_gravity="right|top"
+            android:text="@string/custom_font_icon_location"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="right" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+            <CustomFontTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="LOCATION:"
+                android:id="@+id/locationText"
+                android:textColor="#fff"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:paddingBottom="4dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:textSize="14sp"
+                style="@style/montserratSemiBold"/>
+
+            <CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNKNOWN"
+                android:id="@+id/userLocation"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="bottom"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_marginBottom="8dp"
+                android:gravity="bottom"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                style="@style/montserratLight"/>
+        </LinearLayout>
+    </FrameLayout>-->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="110dp"
+        android:layout_gravity="right|top"
+        android:layout_marginLeft="8dp"
+        android:background="@color/theme_tertiary_orange">
+
+        <TextView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/scheduleIcon"
+            android:layout_gravity="right|top"
+            android:background="@drawable/calendar"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="YOUR SCHEDULE"
+                android:id="@+id/yourSchedule"
+                android:textColor="#fff"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:textSize="14sp"
+                style="@style/montserratSemiBold"/>
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(No Next Session)"
+                android:id="@+id/next_session"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="bottom"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_marginBottom="8dp"
+                android:gravity="bottom"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                style="@style/montserratLight"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

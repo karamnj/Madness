@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/round_green"
+    style="?android:attr/buttonStyleSmall">
+
+    <FrameLayout
+        android:id="@+id/MenuAnimate"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:id="@+id/menu_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/menu_line1"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:id="@+id/menu_line2"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:id="@+id/menu_line3"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"/>
+        <!--<ImageButton
+            android:id="@+id/MenuAnimate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/menu_open1">
+        </ImageButton>-->
+        </LinearLayout>
+    </FrameLayout>
+    <!--<Button
+        android:id="@+id/bMenuBar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_rectangle"
+        android:text="menu"
+        android:textColor="@color/white"
+        android:padding="5dp" />-->
+</LinearLayout>

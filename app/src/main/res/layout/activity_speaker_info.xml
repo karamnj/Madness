@@ -1,0 +1,274 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sirius.madness.ui.activities.SpeakerInfoActivity"
+    tools:ignore="MergeRootFrame">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/speakerInfoContainer"
+        android:background="@drawable/mobtest"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/monochrome_onethird_gradient">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8"
+                android:id="@+id/speakerInfoTextContainer">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/montserratSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First"
+                        android:id="@+id/speakerInfoFirstName"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:gravity="end"
+                        android:layout_marginRight="4dp"
+                        android:inputType="textCapCharacters|textNoSuggestions"
+                        android:textSize="24sp"
+                        android:textColor="@color/theme_primary_base" />
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/montserratLight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last"
+                        android:id="@+id/speakerInfoLastName"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:inputType="textCapCharacters|textNoSuggestions"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center"
+                    android:padding="1dp"
+                    android:id="@+id/speakerInfoBioDescriptionContainer"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+                    <com.sirius.madness.ui.views.CustomAnimationTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:ems="10"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/speakerBioDescription"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black"
+                        android:scrollbars="vertical"
+                        android:fadeScrollbars="false"
+                        android:scrollbarStyle="insideInset"
+                        android:gravity="top|left"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="Title"
+                    android:id="@+id/speakerInfoTitle"
+                    android:layout_gravity="center"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/theme_secondary_green"
+                    android:layout_weight=".4" />
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="Organization"
+                    android:id="@+id/speakerInfoOrganization"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight=".5"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:inputType="text|textNoSuggestions" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".2" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1"
+                            android:background="@color/white"></LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="12"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:layout_gravity="center"
+                        android:padding="1dp"
+                        android:id="@+id/speakerInfoBioButtonContainer">
+
+                        <com.sirius.madness.ui.views.CustomFontTextView
+                            style="@style/montserratLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="READ SPEAKER BIO >"
+                            android:id="@+id/speakerBioButton"
+                            android:layout_gravity="center"
+                            android:inputType="textCapCharacters|textNoSuggestions"
+                            android:layout_weight="1"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/white"
+                            android:padding="10sp"
+                            android:background="@color/theme_primary_base"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:enabled="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1"
+                            android:background="@color/white"></LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:id="@+id/speakerInfoButtonContainer">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/customIconFont"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/speakerInfoEmail"
+                        android:adjustViewBounds="false"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="2"
+                        android:textSize="30sp"
+                        android:text="\uf109"
+                        android:textColor="@android:color/white"
+                        android:gravity="center" />
+
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/customIconFont"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/speakerInfoTwitter"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="2"
+                        android:textSize="30sp"
+                        android:text="\uf111"
+                        android:textColor="@android:color/white"
+                        android:gravity="center" />
+
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/customIconFont"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/speakerInfoLinkedIn"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="2"
+                        android:textSize="30sp"
+                        android:text="\uf106"
+                        android:textColor="@android:color/white"
+                        android:gravity="center" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

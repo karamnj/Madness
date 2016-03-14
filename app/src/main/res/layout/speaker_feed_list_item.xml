@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/theme_neutral_light_grey"
+    android:layout_marginRight="4dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical|left"
+            android:baselineAlignBottom="false"
+            android:id="@+id/SpeakerFeedIcon"
+            android:src="@drawable/mobtest"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/theme_tertiary_orange"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:paddingLeft="15dp"
+                android:baselineAligned="false">
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratSemiBold"
+                    android:id="@+id/SpeakerFeedName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="center_horizontal|left"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Example text" />
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:id="@+id/SpeakerFeedSpace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal|left"
+                    android:singleLine="false"
+                    android:textSize="4sp" />
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratLight"
+                    android:id="@+id/SpeakerFeedOrganization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="2dp"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textSize="13sp"
+                    android:text="Example text" />
+
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratLight"
+                    android:id="@+id/SpeakerFeedTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textSize="13sp"
+                    android:text="Example text"
+                    android:layout_marginLeft="2dp" />
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    android:id="@+id/SpeakerFeedPresenterId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textSize="13sp"
+                    android:text="Example text"
+                    android:layout_marginLeft="2dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

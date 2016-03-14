@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingTop="5dp">
+    <com.sirius.madness.ui.views.CustomFontTextView
+        style="@style/montserratRegular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sectionTitle"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="3 Apr 2015"
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:paddingLeft="20dp"
+        android:background="@color/theme_tertiary_orange" />
+</LinearLayout>

@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.sirius.madness.ui.activities.about.EventDetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/eventBG"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:src="@drawable/mobtest"
+                    android:scaleType="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom">
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/montserratLight"
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FEB 28th"
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/montserratLight"
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7:00 - 0:00pm"
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+                    <com.sirius.madness.ui.views.CustomFontTextView
+                        style="@style/montserratSemiBold"
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome Reception"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratRegular"
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOCATION:"
+                    android:textSize="17sp"
+                    android:textColor="@color/black" />
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratLight"
+                    android:id="@+id/detail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp">
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratRegular"
+                    android:id="@+id/attire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ATTIRE:"
+                    android:textSize="17sp"
+                    android:textColor="@color/black" />
+                <com.sirius.madness.ui.views.CustomFontTextView
+                    style="@style/montserratLight"
+                    android:id="@+id/detail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/partners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/avnet_plain"
+                    android:adjustViewBounds="true"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ibm_web_base"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/montserratLight"
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The bare idea of reaching Leatherhead would not let me rest"
+                android:textSize="17sp"
+                android:textColor="@color/material_grey_800"
+                android:paddingTop="10dp"
+                android:layout_margin="15dp"/>
+
+            <ImageView
+                android:id="@+id/awards"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/annual_awards"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

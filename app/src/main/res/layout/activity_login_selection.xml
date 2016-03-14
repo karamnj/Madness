@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg_no_logo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_avnetLogo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/login_logo"
+        android:background="#20FFFFFF"
+        android:layout_gravity="right" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <com.sirius.madness.ui.views.CustomFontTextView
+            style="@style/montserratLight"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/login_selection_explain_text"
+            android:id="@+id/login_selection_explain_text"
+            android:layout_weight="4"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.9"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_button_selector_shadow">
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/customIconFont"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/custom_font_icon_twitter"
+                android:id="@+id/login_twitter_icon"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:alpha="0.8"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:textStyle="bold"
+                android:gravity="center_vertical|right"
+                android:layout_column="0"
+                android:layout_weight="3" />
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/montserratRegular"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/login_with_twitter"
+                android:id="@+id/login_twitter_button"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical|left"
+                android:textSize="20sp"
+                android:alpha="0.8"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:textStyle="bold"
+                android:layout_column="1"
+                android:layout_weight="7"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/twitter_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_button_selector_shadow">
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/customIconFont"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/custom_font_icon_linked_in"
+                android:id="@+id/login_linkedin_icon"
+                android:layout_weight="3"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:alpha="0.8"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:textStyle="bold"
+                android:gravity="center_vertical|right" />
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/montserratRegular"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/login_with_linkedin"
+                android:id="@+id/login_with_linkedin_button"
+                android:layout_weight="7"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical|left"
+                android:textSize="20sp"
+                android:alpha="0.8"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:capitalize="characters"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/login_linkedin_icon" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+
+</LinearLayout>

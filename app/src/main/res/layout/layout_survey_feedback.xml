@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:measureWithLargestChild="false"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="1dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surveyItemBackground"
+            android:dividerPadding="10dp"
+            android:background="@color/theme_tertiary_light_orange"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp">
+
+            <com.sirius.madness.ui.views.CustomFontTextView
+                style="@style/montserratLight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="Feedback:"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="6.5"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/Feedback"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textinputborder"
+                android:hint="Enter Feedback Here"
+                android:textSize="15dp"
+                android:textColorHint="@color/button_material_light"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:inputType="textVisiblePassword" />
+
+            <Button
+                android:id="@+id/submitFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_rectangle"
+                android:padding="10dp"
+                android:text="@string/submit_feedback"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
